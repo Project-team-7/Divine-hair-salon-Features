@@ -1,0 +1,98 @@
+/*Feature*/
+
+#Feature{
+  width: 100%;
+  padding: 100px 0 50px;
+}
+.title-text{
+  text-align: center;
+  padding-bottom: 70px;
+}
+.title-text p{
+  margin: auto;
+  font-size: 35px;
+  color: #cc9900;
+  font-weight: bold;
+  font-family: 'Ravi Prakash', cursive;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+.title-text p::after{
+  content: '';
+  width: 125px;
+  height: 50px;
+  background: linear-gradient(rgba(243, 156, 18,0.3),rgba(241, 196, 15,0.3));
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: rotate(5deg);
+}
+.title-text h1{
+  font-size: 40px;
+  font-family: 'Ravi Prakash', cursive;
+}
+.Feature-box{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+.Features{
+  flex-basis: 50%;
+}
+.Features-img{
+  flex-basis: 50%;
+  margin: auto;
+}
+.Features-img img{
+  width: 70%;
+  border-radius: 10px;
+}
+.Features h1{
+  text-align: left;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: #cc9900;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: 'Ravi Prakash', cursive;
+}
+.Features-desc{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.Features-icon .fa{
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  line-height: 50px;
+  border-radius: 8px;
+  border-color: #cc9900;
+  color: #000000;
+  border: 1px solid #000000;
+}
+.Features-text p{
+  padding: 0 20px;
+  text-align: initial;
+  font-family: 'Ravi Prakash', cursive;
+  font-size: 25px;
+}
+@media screen and (max-width: 770px){
+  .title-text h1{
+    font-size: 35px;
+  }
+  .Features{
+    flex-basis: 100%;
+  }
+  .Features-img{
+    flex-basis: 100%;
+  }
+  .Features-img img{
+    width: 100%;
+  }
+}
